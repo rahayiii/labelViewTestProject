@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewA"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardElevation="14dp">
+
+        <!--use labelImageView instead of imageView-->
+        <com.lid.lib.LabelImageView
+            android:id="@+id/labelImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pet4"
+            app:label_backgroundColor="#F96666"
+            app:label_orientation="LEFT_TOP"
+            app:label_text="PET SHOP"
+            android:layout_gravity="center_vertical|start"
+            android:layout_margin="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LabelImageView"
+                android:layout_gravity="center_vertical|end"
+                android:layout_margin="18dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewB"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardViewA"
+        app:cardElevation="14dp">
+
+        <!--use labelButtonView instead of button-->
+        <com.lid.lib.LabelButtonView
+            android:id="@+id/labelButton"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:background="@color/purple_200"
+            android:gravity="center"
+            android:text="SIGN UP"
+            android:textColor="#ffffff"
+            app:label_backgroundColor="#C2185B"
+            app:label_distance="20dp"
+            app:label_height="20dp"
+            app:label_orientation="RIGHT_TOP"
+            app:label_text="FREE"
+            app:label_textSize="12sp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LabelButtonView"
+            android:layout_gravity="center_vertical|end"
+            android:layout_margin="18dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewC"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardViewB"
+        app:cardElevation="14dp">
+
+        <!--use labelTextView instead of textView-->
+        <com.lid.lib.LabelTextView
+            android:id="@+id/labelText"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_margin="20dp"
+            android:background="@color/purple_500"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Everlane Sweater"
+            android:textColor="#ffffff"
+            app:label_backgroundColor="#C2185B"
+            app:label_distance="15dp"
+            app:label_orientation="LEFT_TOP"
+            app:label_text="%OFF"
+            app:label_textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LabelTextView"
+            android:layout_gravity="center_vertical|end"
+            android:layout_margin="28dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
